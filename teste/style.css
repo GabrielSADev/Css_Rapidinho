@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
     --var-primarycolor: #494949;
     --var-secondarycolor: #313131;
@@ -6,18 +7,26 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins';
 }
 
 header {
     display: flex;
     background-color: var(--var-primarycolor);
     align-items: center;
+    height: 10vh;
 }
 
 #logo {
-    width: 150px;
-    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 10.5vw;
+    position: relative;
+    right: 20%;
+}
+#logo:hover{
+    transition: all 0.5s;
+    transform: scale(1.2);
 }
 
 main {
@@ -28,12 +37,22 @@ aside {
     display: flex;
     background-color: var(--var-primarycolor);
     float: left;
+    position: relative;
+    width: 13%;
+    justify-content: center;
+}
+h1{
+    position: relative;
+    right: 4.5%;
+    color: white;
+    text-decoration: underline;
 }
 
 aside ul li {
     display: flex;
     align-items: center;
     margin: 10px;
+    margin-top: 2.7vw;
 }
 
 a{
@@ -99,23 +118,50 @@ main section {
 
 
 .tes:first-child {
-    width: 30vw;
+    width: 50%;
     color: white;
-    background-color:#494949 ;
+    background-color:rebeccapurple ;
+    position: relative;
+    top: 5vh;
     grid-column-start: 2;
     grid-column-end: 4;
+    display: flex;
+    align-items: center;
+ 
+}
+
+.tes img:first-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
 }
 
 .tes:nth-child(2), .tes:nth-child(3) {
     background-color: #494949;
     padding: 1.5vw;
     border-radius: 8px;
+    position: relative;
+    top: 5vh;
 }
 
 .tes {
+    position: relative;
+    top: 5vh;
     background-color: yellow;
+    padding: 1.5vw;
+    border-radius: 8px;
 }
 
+h2{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 3vw;
+    background-color: #313131;
+
+}
 footer {
     display: flex;
     justify-content: center;
@@ -131,6 +177,9 @@ footer {
 li:hover{
     color: #9305F2;
 }
+li{
+    margin-bottom: 20px;
+}
 p:hover{
     color: #9305F2;
 }
@@ -143,9 +192,6 @@ p{
     font-size: 1.6vw;
 }
 
-h1{
-    color: white;
-}
 #estrela{
     width: 3vw;
 }
